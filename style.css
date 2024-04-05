@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.border{
+    width: 90%;
+    height: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.progress{
+    width: 90%;
+    background-color: orange;
+    height: 5px;
+}
+
+.dot{
+    background-color: orange;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-left: -1px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.badge{
+    position: absolute;
+    bottom: 30px;
+    background-color: orange;
+    /* left: -100%; */
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.badge::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: orange;
+    bottom: -5px;
+    left: 40%;
+    transform: rotate(45deg);
+}
